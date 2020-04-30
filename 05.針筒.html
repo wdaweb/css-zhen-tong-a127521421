@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box {
+            width: 1000px;
+            height: 400px;
+            /* border: 1px solid black; */
+            position: relative;
+        }
+
+        #left {
+            width: 100px;
+            height: 200px;
+            border: 1px solid rgb(105, 105, 105);
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            border-radius: 10px 10px 10px 10px;
+            background-image: linear-gradient(white 0%, rgb(110, 110, 110) 70%, white 100%);
+
+        }
+
+        #left2 {
+            width: 130px;
+            height: 130px;
+            border: 1px solid rgb(105, 105, 105);
+            position: absolute;
+            top: 50%;
+            left: 10.1%;
+            transform: translate(0, -50%);
+            background-image: linear-gradient(white 0%, rgb(119, 119, 119) 80%, white 100%);
+        }
+
+        #center {
+            width: 600px;
+            height: 200px;
+            border: 1px solid rgb(105, 105, 105);
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            left: 23.2%;
+            font-size: 20px;
+            line-height: 375px;
+            background-image: linear-gradient(white 0%, rgb(119, 119, 119) 70%, white 100%);
+        }
+
+        #right2 {
+            width: 90px;
+            height: 130px;
+            border: 1px solid rgb(105, 105, 105);
+            position: absolute;
+            top: 50%;
+            left: 83.3%;
+            transform: translate(0, -50%);
+            background-image: linear-gradient(white 0%, rgb(119, 119, 119) 80%, white 100%);
+            border-radius: 0 10px 10px 0;
+        }
+
+        #right {
+            width: 100px;
+            height: 0.5px;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            background-color: black;
+            left: 92.4%;
+        }
+
+        #center::after {
+            content: '';
+            height: 200px;
+            width: 300px;
+            background-image: linear-gradient(90deg, black 30%, rgb(252, 252, 188) 30%);
+            position: absolute;
+            left: 50%;
+        }
+
+        #tr {
+            width: 600px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            z-index: 999;
+        }
+
+        #td {
+            width: 20px;
+            height: 30px;
+            border-right: 1px solid black;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="left"></div>
+        <div id="left2"></div>
+        <div id="center">
+            <table id="tr">
+                <tr>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                    <td id="td"></td>
+                </tr>
+            </table>
+            Made in Taiwan
+        </div>
+        <div id="right2"></div>
+        <div id="right"></div>
+    </div>
+</body>
+
+</html>
